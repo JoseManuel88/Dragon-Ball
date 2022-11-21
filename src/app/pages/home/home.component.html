@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="card" *ngFor="let character of myCharacters">
+        <div>
+            <div class="img_clase">
+                <img src="{{character.image}}" routerLink="/character/{{character.id}}" />
+            </div>
+            <div>
+                <p>{{character.name}}</p>
+            </div>
+            <div>
+                <p>{{character.genre}}</p>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

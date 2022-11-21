@@ -1,0 +1,33 @@
+.card{ 
+    
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px 5px rgb(0 0 0 / 26%);
+    margin: 17px;
+    background-color: bisque;
+    align-items: center;
+    font-family: fantasy;
+}
+img{
+    width: 85%;
+    height: 85%;
+
+    }
+.container{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-top: 45px;
+    
+}
+.img_clase{
+    background-color: aqua;
+    width: 153px;
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-around;
+
+}

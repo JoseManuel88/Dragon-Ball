@@ -1,0 +1,32 @@
+<form [formGroup]="reactiveForm">
+<div class="create">
+    <div>
+        <p>Name</p>
+        <input type="text" formControlName="name">
+    </div>
+    <div>
+        <p>Genre</p>
+        <input type="text" formControlName="genre">
+    </div>
+    <div>
+        <p>Image</p>
+        <input type="text" formControlName="image">
+    </div>
+    <div>
+        <p>Race</p>
+        <input type="text" formControlName="race">
+    </div>
+    <div>
+        <p>Transform</p>
+        <input type="checkbox" formControlName="transform">
+    </div>
+    <div>
+        <p>Universe</p>
+        <input type="number" formControlName="universe" max="12" min="0">
+    </div>
+    <div>
+        <button (click)="createCharacter()">Crear</button>
+    </div>
+</div>
+
+</form>

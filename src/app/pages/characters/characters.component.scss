@@ -1,12 +1,15 @@
-.fondo{
-    background-color: chartreuse;
-    font-family: fantasy;
-}
 
-.container{
+.datos{
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
     margin-top: 45px;
-    
+    font-family: fantasy;
+    color: rgb(10, 10, 83);
+
 }
+img{
+    width: 20%;
+ 
+
+    }
