@@ -16,10 +16,10 @@ public getCharacter(id: string): Observable<any>{
   return this.http.get("https://db-back.vercel.app/characters/" + id)
 }
 public createCharacter(character:any): Observable<any>{
-  return this.http.post("https://db-back.vercel.app/characters/create",character)
+  return this.http.post("https://db-back.vercel.app/characters/create/",character)
 }
 public deleteCharacter(character:any): Observable<any>{
-  return this.http.delete("https://db-back.vercel.app/character/delete",character)
+  return this.http.delete("https://db-back.vercel.app/characters/delete/",character)
 }
 
 }
