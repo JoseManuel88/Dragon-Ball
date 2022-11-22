@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CharacterDetailComponent } from './pages/character-detail/character-detail.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './pages/login/login.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CharactersComponent,
     NewCharacterComponent,
     NavbarComponent,
-    CharacterDetailComponent
+    CharacterDetailComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

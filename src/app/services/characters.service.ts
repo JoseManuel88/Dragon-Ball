@@ -19,7 +19,10 @@ public createCharacter(character:any): Observable<any>{
   return this.http.post("https://db-back.vercel.app/characters/create",character)
 }
 public deleteCharacter(character:any): Observable<any>{
-  return this.http.delete("https://db-back.vercel.app/characters/delete",character)
+  return this.http.delete("https://db-back.vercel.app/characters/delete/" + character)
+}
+public updateCharacter(character:any, id: string): Observable<any>{
+  return this.http.put("https://db-back.vercel.app/characters/edit/"+id, character)
 }
 
 }

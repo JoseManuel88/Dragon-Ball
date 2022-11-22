@@ -25,7 +25,8 @@
         <input type="number" formControlName="universe" max="12" min="0">
     </div>
     <div>
-        <button (click)="createCharacter()">Crear</button>
+        <button (click)="createCharacter()" *ngIf="!this.id" >Create</button>
+        <button (click)="updateCharacter()" *ngIf="this.id">Update</button>
     </div>
 </div>
 

@@ -1,8 +1,10 @@
 
 <div class="datos" *ngFor="let character of myCharacters">
 
- 
     <p>{{character.name}}</p>
-   <img src="{{character.image}}"/>
-    <button routerLink="/character/{{character.id}}">Ver mas</button>
+    <img src="{{character.image}}"/>
+     <button routerLink="/character/{{character.id}}">Details</button>
+
+ 
+    
 </div>

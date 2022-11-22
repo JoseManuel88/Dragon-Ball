@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CharactersService } from 'src/app/services/characters.service';
+import { CommunicatorService } from 'src/app/services/communicator.service';
 
 @Component({
   selector: 'app-characters',
@@ -8,7 +9,8 @@ import { CharactersService } from 'src/app/services/characters.service';
 })
 export class CharactersComponent implements OnInit {
   myCharacters?: any[];
-  constructor(private characterService: CharactersService) {
+  constructor(private characterService: CharactersService, private communicatorService: CommunicatorService) {
+
 
     this.characterService.getAllCharacters().subscribe((data: any) => {
       console.log(data);

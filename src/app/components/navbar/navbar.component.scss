@@ -1,14 +1,16 @@
 nav{
-    background-color: rgba(223, 226, 47, 0.993);
+    background: radial-gradient(rgb(0, 255, 149), rgb(225, 0, 255), rgb(255, 158, 30));
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 button{
-    margin-right: 60px;
-    margin-bottom: 30px;
-    margin-top: 40px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     border-radius: 5px;
-    color: rgb(252, 179, 21);
-    background-color: blue;
-
+    background-color: rgb(229, 255, 0);
+font-size:larger;
+font-family: fantasy;
 }

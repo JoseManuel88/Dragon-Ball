@@ -1,5 +1,6 @@
+
 .datos{
-    background-color: rgb(230, 248, 166);
+    background: radial-gradient(red, yellow, rgb(30, 144, 255));
     list-style: none;
     padding: 0px 20px 15px 25px;
     color: rgb(28, 28, 31);
@@ -11,14 +12,19 @@
     width: 140px;
     align-items: baseline;
     justify-items: center;
-    margin-right: 50px;
-    margin-left: 20px;
+    // margin-right: 20px;
+    margin-left: 25px;
 }
 
+
+
 img{
-    width: 100%;
+    width: 80%;
     margin-bottom: 15px;
 
+    }
+    button{
+        background-color: cyan;
     }
    
 

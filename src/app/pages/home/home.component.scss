@@ -1,5 +1,5 @@
 .card{ 
-    background-color: rgb(151, 224, 14);
+    background: radial-gradient(red, rgb(245, 245, 45), rgb(30, 255, 60));
     list-style: none;
   padding: 20px;
   color: rgb(28, 28, 31);
@@ -13,8 +13,8 @@
   width: 140px;
   scale: 0, 5;
   padding: 1px 10px 0px 0px;
-  margin-left: 30px;
-  margin-right: 60px;
+  margin-left: 20px;
+//   margin-right: 30px;
 }
 img{
     width: 85%;
@@ -26,7 +26,7 @@ img{
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
-    margin-top: 45px;
+    margin-top: 30px;
     
 }
 .img_clase{
