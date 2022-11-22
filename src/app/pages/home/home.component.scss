@@ -1,19 +1,25 @@
 .card{ 
-    
-    display: flex;
-    flex-direction: column;
-    width: 180px;
-    height: 180px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 15px 5px rgb(0 0 0 / 26%);
-    margin: 17px;
-    background-color: bisque;
-    align-items: center;
-    font-family: fantasy;
+    background-color: rgb(230, 248, 166);
+    list-style: none;
+  padding: 20px;
+  color: rgb(28, 28, 31);
+  text-align: center;
+  border-left: 82px;
+  border-radius: 10%;
+  display: flex;
+  box-shadow: 11px 15px 25px 3px #000000;
+  flex-direction: column;
+  margin: 40px 5px;
+  width: 140px;
+  scale: 0, 5;
+  padding: 1px 10px 0px 0px;
+  margin-left: 30px;
+  margin-right: 60px;
 }
 img{
     width: 85%;
     height: 85%;
+    
 
     }
 .container{
@@ -24,10 +30,14 @@ img{
     
 }
 .img_clase{
-    background-color: aqua;
+    padding: auto;
     width: 153px;
     display: flex;
     align-content: flex-end;
     justify-content: space-around;
 
+}
+.card_center{
+   
+    margin-top: 20px;
 }
