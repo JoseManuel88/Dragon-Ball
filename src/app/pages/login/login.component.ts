@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { CommunicatorService } from 'src/app/services/communicator.service';
 
 @Component({
@@ -15,18 +16,22 @@ public reactiveForm = new FormGroup({
   password: new FormControl(null,[Validators.required])
   
 });
-  constructor(private communitorService: CommunicatorService) { }
+  constructor(private communitorService: CommunicatorService,private route: Router) { }
 
   ngOnInit(): void {
     
   }
   public loginUser() {
 
-    this.communitorService.setIsAuth(true);
+    
+    if (this.reactiveForm.valid){
+      this.communitorService.setIsAuth(true);
+      this.route.navigateByUrl('characters');
+    }
 
   }
   public createUser(){
-
+    this.route.navigateByUrl('register');
 
     
   }

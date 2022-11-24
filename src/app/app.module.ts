@@ -11,6 +11,7 @@ import { CharacterDetailComponent } from './pages/character-detail/character-det
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { LoginComponent } from './pages/login/login.component';
     NewCharacterComponent,
     NavbarComponent,
     CharacterDetailComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
