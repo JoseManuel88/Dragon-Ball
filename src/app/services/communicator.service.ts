@@ -9,8 +9,19 @@ export class CommunicatorService {
   private isAuth = new BehaviorSubject<boolean>(false);
   private isAuth$ = this.isAuth.asObservable();
 
+  private loading = new BehaviorSubject<boolean>(false);
+  private loading$ = this.loading.asObservable();
+
   constructor() { }
 
+
+  public setLoading(loading: boolean) {
+    this.loading.next(loading);
+  }
+
+  public getLoading(): Observable<any> {
+    return this.loading;
+  }
 
 
   public setIsAuth(isAuth: boolean) {

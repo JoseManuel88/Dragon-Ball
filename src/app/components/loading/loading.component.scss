@@ -1,0 +1,28 @@
+.spinner,
+.spinner:after {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
+  border-radius: 50%;
+}
+.spinner {
+  background-image: url("https://w7.pngwing.com/pngs/212/185/png-transparent-cell-dragon-ball-z-the-legacy-of-goku-ii-vegeta-frieza-goku-cell-dragon-ball-dragon-ball-z-the-legacy-of-goku-ii.png");
+  animation-iteration-count: infinite;
+  animation-timing-function: jump-end;
+  animation-duration: 3.5s;
+  animation-name: spinner-loading;
+}
+@keyframes spinner-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+.width {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }

@@ -11,6 +11,7 @@ export class CharactersComponent implements OnInit {
   myCharacters?: any[];
   constructor(private characterService: CharactersService, private communicatorService: CommunicatorService) {
 
+    this.communicatorService.setLoading(true);
 
     this.characterService.getAllCharacters().subscribe((data: any) => {
       console.log(data);
@@ -27,6 +28,9 @@ export class CharactersComponent implements OnInit {
 
     });
 
+    setTimeout(() => {
+      this.communicatorService.setLoading(false);
+    }, 800);
   }
 
   ngOnInit(): void {

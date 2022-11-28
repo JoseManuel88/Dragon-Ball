@@ -1,10 +1,10 @@
 <form [formGroup]="reactiveForm" >
-    <p>User</p>
-    <input type="text" formControlName="user">
-    <p>Password</p>
-    <input  type="text" formControlName="password">
+    
+    <input type="text" formControlName="user" placeholder="Username">
+   
+    <input  type="text" formControlName="password" placeholder="Password">
 
     <button (click)="loginUser()">Login</button>
-    <button (click)="createUser()">createUser</button>
+    <button (click)="createUser()">CreateUser</button>
 
 </form>

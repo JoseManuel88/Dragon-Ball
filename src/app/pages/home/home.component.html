@@ -2,7 +2,7 @@
     <div class="card" *ngFor="let character of myCharacters">
         <div class="card_center">
             <div class="img_clase">
-                <img src="{{character.image}}" routerLink="/character/{{character.id}}" />
+                <img src="{{character.img}}" routerLink="/character/{{character._id}}" />
             </div>
             <div>
                 <p>{{character.name}}</p>

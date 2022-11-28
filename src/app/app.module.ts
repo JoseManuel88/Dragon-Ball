@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { LoadingComponent } from './components/loading/loading.component';
+
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { RegisterComponent } from './pages/register/register.component';
     NavbarComponent,
     CharacterDetailComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoadingComponent
+
   ],
   imports: [
     BrowserModule,

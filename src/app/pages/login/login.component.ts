@@ -25,6 +25,7 @@ public reactiveForm = new FormGroup({
 
     
     if (this.reactiveForm.valid){
+      console.log('fds');
       this.communitorService.setIsAuth(true);
       this.route.navigateByUrl('characters');
     }
